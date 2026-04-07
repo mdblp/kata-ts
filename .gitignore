@@ -1,0 +1,10 @@
+node_modules
+lib
+coverage
+src/.DS_Store
+.DS_Store
+pnpm-debug.log
+reports
+**/__snapshots__
+.stryker-tmp
+/.idea/
