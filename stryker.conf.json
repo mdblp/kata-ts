@@ -1,0 +1,29 @@
+{
+  "$schema": "./node_modules/@stryker-mutator/core/schema/stryker-schema.json",
+  "coverageAnalysis": "perTest",
+  "plugins": ["@stryker-mutator/jest-runner", "@stryker-mutator/typescript-checker"],
+  "mutate": ["src/gildedRose.ts", "!src/test.ts", "!src/unit.test.ts"],
+  "reporters": ["progress", "dots", "dashboard", "html"],
+  "testRunner": "jest",
+  "checkers": ["typescript"],
+  "tsconfigFile": "./tsconfig.json",
+  "ignoreStatic": true,
+  "jest": {
+    "projectType": "custom",
+    "configFile": "./jest.config.json",
+    "enableFindRelatedTests": true
+  },
+  "clearTextReporter": {
+    "allowColor": true,
+    "allowEmojis": true,
+    "logTests": true,
+    "maxTestsToLog": 3,
+    "reportTests": true,
+    "reportMutants": true,
+    "reportScoreTable": true,
+    "skipFull": false
+  },
+  "mutator": {
+    "plugins": null
+  }
+}
