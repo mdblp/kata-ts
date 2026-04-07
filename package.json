@@ -5,7 +5,8 @@
   "main": "kata.ts",
   "scripts": {
     "build": "tsc -p tsconfig.json",
-    "test": "jest -i src/test.ts"
+    "test": "jest -i src/test.ts",
+    "mutants": "stryker run"
   },
   "keywords": [],
   "author": "",
