@@ -24,7 +24,7 @@ describe('Gilded Rose inventory update should', () => {
     expect(gildedRose).not.toBeNull();
   });
 
-  test.skip('update quality and sell-in values', () => {
+  test('update quality and sell-in values', () => {
     expect(doUpdateQuality).toVerifyAllCombinations(
       [
         'foo',
@@ -42,7 +42,7 @@ import fc from 'fast-check';
 
 describe('Gilded Rose property-based tests', () => {
   describe('quality bounds', () => {
-    test.skip('quality should never be negative', () => {
+    test('quality should never be negative', () => {
       fc.assert(
         fc.property(
           fc.string(),

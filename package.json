@@ -6,6 +6,7 @@
   "scripts": {
     "build": "tsc -p tsconfig.json",
     "test": "jest -i src/test.ts",
+    "unittest": "jest -i src/unit.test.ts"
     "mutants": "stryker run"
   },
   "keywords": [],
